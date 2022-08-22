@@ -10,7 +10,17 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      // '@assets': path.resolve(__dirname, 'src/assets/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+      // '@customTypes': path.resolve(__dirname, 'src/types/'),
+      // '@hooks': path.resolve(__dirname, 'src/hooks/'),
+      '@pages': path.resolve(__dirname, 'src/pages/'),
+      // '@redux': path.resolve(__dirname, 'src/redux/'),
+      '@styles': path.resolve(__dirname, 'src/styles/')
+      // '@utils': path.resolve(__dirname, 'src/utils/')
+    }
   },
   module: {
     rules: [

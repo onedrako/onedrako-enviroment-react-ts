@@ -59,5 +59,6 @@
     "extends": [
       "./node_modules/standard/eslintrc.json"
     ]
-  }
+  },
+  "eslintIgnore": ["tsconfig.json"]
 }

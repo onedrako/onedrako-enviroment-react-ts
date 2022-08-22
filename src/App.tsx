@@ -1,12 +1,16 @@
 import React from 'react'
-import config from '../config'
+import { Route, Routes } from 'react-router-dom'
+import { Home } from '@pages/Home'
+import { GlobalStyles } from '@styles/GlobalStyles'
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <p>{config.api}</p>
-    </div>
+    <>
+      <GlobalStyles/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </>
   )
 }
 
